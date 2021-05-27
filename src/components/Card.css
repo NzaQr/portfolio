@@ -1,0 +1,70 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem;
+  width: 100%;
+  height: 250px;
+  background-image: url(../assets/grain-bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #edf2f4;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.15);
+  transform-style: preserve-3d;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #edf2f4;
+  transform: translateZ(60px);
+}
+
+.inner h1 {
+  font-size: 2rem;
+}
+
+.inner p {
+  margin-top: 0;
+}
+
+.inner div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: #edf2f4;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .card-container {
+    height: 500px;
+  }
+
+  .inner h1 {
+    font-size: 4vw;
+  }
+
+  .inner p {
+    font-size: 2vw;
+  }
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+}

@@ -1,38 +1,211 @@
-.App {
+:root {
+  font-family: "Roboto", sans-serif;
+  background-color: #edf2f4;
+}
+
+body {
+  margin: 10px;
+}
+
+.photo {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.about h1 {
+  position: relative;
+  top: -120px;
+  max-width: 100%;
+  font-size: 1.3rem;
   text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 0;
+  color: #edf2f4;
+  background-image: url(./assets/grain-bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.15);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about p,
+.contact p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left;
+  color: #2b2d42;
+  font-size: 1.3rem;
+  padding: 0 1.5rem;
+  margin-top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.projects-invite a {
+  transition: all 0.2s ease-in-out;
+  text-decoration: 3px underline;
+  text-decoration-color: #2b2d42;
+}
+
+.projects h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #2b2d42;
+  margin: 7rem 0 3rem;
+}
+
+.projects-invite {
+  padding: 1rem;
+  color: #2b2d42;
+  font-size: 1.5rem;
+}
+
+.projects-invite a {
+  color: #707f99;
+  font-weight: 500;
+}
+
+.projects-invite a:hover {
+  color: #2b2d42;
+  text-decoration-color: #707f99;
+}
+
+.experience {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url(./assets/grain-bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  color: #fefcf7;
+}
+
+.experience p {
+  padding: 1rem;
+}
+
+.timeline-container {
+  display: none;
+}
+
+.contact p {
+  margin-top: 2rem;
+  text-align: left;
+  padding: 1rem;
+  color: #2b2d42;
+  border-radius: 20px;
+}
+
+@media (min-width: 800px) {
+  .about h1 {
+    font-size: 2.5rem;
+  }
+
+  .about p,
+  .experience p,
+  .contact p {
+    font-size: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 1200px) {
+  body {
+    margin: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .about-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .photo {
+    border-radius: 10x;
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .about h1 {
+    position: initial;
+    text-align: left;
+    flex-basis: 50%;
+    font-size: 4vw;
+    line-height: 5vw;
+    padding: 3rem;
+    height: 100%;
+  }
+
+  .about p,
+  .experience p,
+  .contact p {
+    font-size: 2vw;
+  }
+
+  .about p {
+    max-width: 50%;
+    margin: 10rem auto 15rem;
+  }
+
+  .projects h1 {
+    font-size: 5vw;
+  }
+
+  .projects-component {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects-invite {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 0 15rem;
+    padding-top: 0;
+  }
+
+  .experience p:nth-child(2) {
+    margin-bottom: 2rem;
+  }
+
+  .experience p:nth-child(3) {
+    margin-bottom: 5rem;
+  }
+
+  .experience p {
+    margin: 0 0 0 5rem;
+  }
+
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2515px;
+    justify-content: space-between;
+    height: 27rem;
+    margin-left: 3rem;
+  }
+
+  .timeline-container::before {
+    content: "";
+    height: 400px;
+    width: 3px;
+    position: absolute;
+    left: 15px;
+    background-color: #707f99;
+  }
+
+  .circle {
+    height: 30px;
+    width: 30px;
+    border: 3px solid #707f99;
+    border-radius: 50%;
+    background-color: #fefcf7;
+    z-index: 1;
+  }
+
+  .contact p {
+    font-size: 1.5rem;
+    margin: 4rem;
+    text-align: center;
   }
 }
