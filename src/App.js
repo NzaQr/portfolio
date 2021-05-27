@@ -29,7 +29,7 @@ function App() {
         </div>
         <p className="projects-invite">
           Te invito a ver más en mi{" "}
-          <a href="https://github.com/NzaQr">Github</a>!
+          <a href="https://github.com/NzaQr">GitHub</a>!
         </p>
       </section>
       <section className="experience">
@@ -54,7 +54,7 @@ function App() {
       <section className="contact">
         <p>
           Si querés saber más sobre mí o tenés alguna propuesta mandame un mail
-          a: naz.quiroga@gmail.com o hablemos por linkedin!
+          a: naz.quiroga@gmail.com o hablemos por LinkedIn!
         </p>
       </section>
     </>

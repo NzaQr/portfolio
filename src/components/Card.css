@@ -9,7 +9,7 @@
   background-image: url(../assets/grain-bg-desktop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #edf2f4;
+  color: var(--light);
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.15);
   transform-style: preserve-3d;
@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #edf2f4;
+  color: var(--light);
   transform: translateZ(60px);
 }
 
@@ -41,7 +41,7 @@
 }
 
 a {
-  color: #edf2f4;
+  color: var(--light);
 }
 
 .icon {
