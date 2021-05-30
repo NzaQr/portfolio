@@ -23,7 +23,6 @@ function App() {
 
   return (
     <>
-      {/* CHANGE NAV MENU STYLE */}
       <Header
         handleClickAbout={handleClickAbout}
         handleClickProjects={handleClickProjects}

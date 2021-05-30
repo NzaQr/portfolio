@@ -12,8 +12,12 @@ export default function Projects() {
             <p>{item.tech}</p>
             <img src={item.img} alt="vista previa del proyecto" />
             <div className="links">
-              <a href={item.demo}>DEMO</a>
-              <a href={item.repo}>REPO</a>
+              <a href={item.demo} target="_blank" rel="noopener noreferrer">
+                DEMO
+              </a>
+              <a href={item.repo} target="_blank" rel="noopener noreferrer">
+                REPO
+              </a>
             </div>
             <div className="description">
               <p>{item.description}</p>
@@ -35,8 +39,20 @@ export default function Projects() {
                   <h3>{item.title}</h3>
                   <p>{item.tech}</p>
                   <div className="links">
-                    <a href={item.demo}>DEMO</a>
-                    <a href={item.repo}>REPO</a>
+                    <a
+                      href={item.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      DEMO
+                    </a>
+                    <a
+                      href={item.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      REPO
+                    </a>
                   </div>
                 </div>
               </div>
