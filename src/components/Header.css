@@ -124,7 +124,7 @@ input:checked + .slider:before {
   );
   margin-top: -45px;
   right: 0;
-  top: 20%;
+  top: 17%;
   -webkit-transition: 350ms;
   -o-transition: 350ms;
   transition: 350ms;

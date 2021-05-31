@@ -23,8 +23,6 @@
   -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2),
     0 15px 12px rgba(0, 0, 0, 0.15);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.15);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
 }
 
 .inner {
@@ -44,6 +42,7 @@
   color: var(--text-color);
   -webkit-transform: translateZ(60px);
   transform: translateZ(60px);
+  z-index: 0;
 }
 
 .inner h1 {
