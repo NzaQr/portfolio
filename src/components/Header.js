@@ -45,7 +45,7 @@ export default function Header({ handleClickAbout, handleClickProjects }) {
         </label>
       </div>
       <div className="nav">
-        <div className="menu-bars">
+        <div className="menu-icons">
           {sidebar ? (
             <MdClose alt="close menu" onClick={showSidebar} />
           ) : (
