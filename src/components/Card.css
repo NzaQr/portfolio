@@ -1,7 +1,16 @@
 .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 7rem auto 1.5rem;
   width: 100%;
@@ -11,16 +20,29 @@
   background-size: cover;
   color: var(--text-color);
   border-radius: 20px;
+  -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2),
+    0 15px 12px rgba(0, 0, 0, 0.15);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.15);
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
 .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: var(--text-color);
+  -webkit-transform: translateZ(60px);
   transform: translateZ(60px);
 }
 
@@ -33,8 +55,14 @@
 }
 
 .inner div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   padding-bottom: 1rem;
