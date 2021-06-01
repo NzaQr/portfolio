@@ -41,6 +41,7 @@
   align-items: center;
   color: var(--text-color);
   -webkit-transform: translateZ(60px);
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translateZ(60px);
   z-index: 0;
 }
